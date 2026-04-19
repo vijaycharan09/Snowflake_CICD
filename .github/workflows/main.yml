@@ -8,7 +8,7 @@ on:
       - main
   push:
     branches:
-      - staging
+      - Staging
       - main
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
         run: |
           TARGET_BRANCH="${GITHUB_BASE_REF:-${GITHUB_REF#refs/heads/}}"
           
-          if [[ $TARGET_BRANCH == "staging" ]]; then
+          if [[ $TARGET_BRANCH == "Staging" ]]; then
             echo "DEPLOY_ENV=staging" >> $GITHUB_ENV
             echo "Environment set to staging"
           elif [[ $TARGET_BRANCH == "main" ]]; then

@@ -63,8 +63,8 @@ CREATE OR REPLACE TABLE {{env}}_tasty_bytes.raw_pos.country
    country VARCHAR(16777216),
    iso_currency VARCHAR(3),
    iso_country VARCHAR(2),
-   city VARCHAR(20000),
-   city_population VARCHAR(20000)
+   city VARCHAR(2000),
+   city_population VARCHAR(2000),
    CITY_ID NUMBER(18,0)
 );
 
